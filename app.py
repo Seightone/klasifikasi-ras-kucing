@@ -98,7 +98,7 @@ for ras, info in informasi_kucing.items():
 # Upload untuk klasifikasi
 st.subheader("🔍 Prediksi Ras Kucing dari Gambar")
 
-uploaded_file = st.file_uploader("Upload gambar kucing", type=["jpg", "png", "jpeg"])
+uploaded_file = st.file_uploader("Upload gambar kucing - Semakin besar pixel gambar semakin akurat", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file).convert("RGB")  # Konversi ke RGB
